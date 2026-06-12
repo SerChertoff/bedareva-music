@@ -7,7 +7,7 @@ export function ServicesGrid() {
       {SERVICES.map(({ icon, title, text, accent }) => (
         <article
           key={title}
-          className={`rounded-xl border p-8 transition hover:-translate-y-1 hover:shadow-lg ${
+          className={`rounded-xl border p-6 transition hover:-translate-y-1 hover:shadow-lg sm:p-8 ${
             accent
               ? 'border-transparent bg-gradient-to-br from-brand-blue-dark to-[#8b3d4f] text-white hover:shadow-brand-blue/20'
               : 'border-stone-200/80 bg-surface-card hover:border-brand-blue/40 hover:shadow-brand-blue/10'

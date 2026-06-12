@@ -47,12 +47,10 @@ export function StudioLogo({ size = 56, className = '' }: StudioLogoProps) {
         </filter>
       </defs>
 
-      {/* Фон — закатное свечение */}
       <circle cx="40" cy="40" r="36" fill="url(#skyGlow)" />
       <circle cx="40" cy="40" r="36" fill="url(#sunGlow)" opacity="0.55" />
       <circle cx="40" cy="40" r="35" stroke="rgba(255,255,255,0.45)" strokeWidth="1.5" />
 
-      {/* Солнечные лучи */}
       <g stroke="#FFE566" strokeWidth="1.5" strokeLinecap="round" opacity="0.85">
         <line x1="62" y1="18" x2="68" y2="12" />
         <line x1="66" y1="22" x2="74" y2="20" />
@@ -62,11 +60,9 @@ export function StudioLogo({ size = 56, className = '' }: StudioLogoProps) {
       <circle cx="62" cy="18" r="6" fill="#FFD166" />
       <circle cx="62" cy="18" r="4" fill="#FFF3B0" />
 
-      {/* Звёздочки-блики */}
       <path d="M14 20 L15 23 L18 23 L15.5 25 L16.5 28 L14 26 L11.5 28 L12.5 25 L10 23 L13 23 Z" fill="#FFF9C4" opacity="0.9" />
       <path d="M22 12 L22.6 13.6 L24.2 13.6 L22.9 14.6 L23.4 16.2 L22 15.2 L20.6 16.2 L21.1 14.6 L19.8 13.6 L21.4 13.6 Z" fill="#FFF9C4" opacity="0.7" />
 
-      {/* Волны-ноты */}
       <path
         d="M8 56 C16 50, 24 58, 32 52 C40 46, 48 56, 56 50 C64 44, 68 52, 74 48"
         stroke="url(#waveGrad)"
@@ -83,43 +79,21 @@ export function StudioLogo({ size = 56, className = '' }: StudioLogoProps) {
         fill="none"
       />
 
-      {/* Корпус лодки */}
-      <path
-        d="M26 54 C30 58, 50 58, 54 54 L52 50 C48 52, 32 52, 28 50 Z"
-        fill="#5C2E1A"
-      />
-      <path
-        d="M28 50 C32 53, 48 53, 52 50"
-        stroke="#FFD166"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        fill="none"
-      />
+      <path d="M26 54 C30 58, 50 58, 54 54 L52 50 C48 52, 32 52, 28 50 Z" fill="#5C2E1A" />
+      <path d="M28 50 C32 53, 48 53, 52 50" stroke="#FFD166" strokeWidth="1.2" strokeLinecap="round" fill="none" />
 
-      {/* Мачта */}
       <path d="M38 50 L38 24" stroke="#FFE566" strokeWidth="2.2" strokeLinecap="round" />
       <path d="M38 22 L38 16 L42 22 Z" fill="#FFB703" />
 
-      {/* Главный парус — динамичный, развевающийся */}
-      <path
-        d="M38 26 C20 30, 12 48, 22 54 L38 48 Z"
-        fill="url(#sailMain)"
-        filter="url(#logoGlow)"
-      />
-      <path
-        d="M38 24 C52 20, 66 32, 62 46 L38 42 Z"
-        fill="url(#sailFront)"
-        filter="url(#logoGlow)"
-      />
+      <path d="M38 26 C20 30, 12 48, 22 54 L38 48 Z" fill="url(#sailMain)" filter="url(#logoGlow)" />
+      <path d="M38 24 C52 20, 66 32, 62 46 L38 42 Z" fill="url(#sailFront)" filter="url(#logoGlow)" />
 
-      {/* Музыкальная нота — креативный акцент студии */}
       <g transform="translate(54, 38) rotate(-12)" fill="#FFD166">
         <ellipse cx="0" cy="8" rx="3.2" ry="2.6" />
         <rect x="2.8" y="-10" width="2" height="18" rx="1" />
         <path d="M4.8 -10 C10 -8, 12 -4, 10 0 C8 2, 5 1, 4.8 -2" fill="#FFD166" />
       </g>
 
-      {/* Блик на парусе */}
       <path d="M34 30 L30 42 L36 40 Z" fill="rgba(255,255,255,0.35)" />
     </svg>
   );

@@ -31,7 +31,7 @@ export function BookingForm() {
   };
 
   return (
-    <div className="mx-auto max-w-lg rounded-[20px] bg-surface-card p-8 shadow-2xl md:p-10">
+    <div className="mx-auto max-w-lg rounded-[20px] bg-surface-card p-5 shadow-2xl sm:p-8 md:p-10">
       <h2 className="mb-8 text-center font-display text-xl font-bold uppercase tracking-wide text-brand-blue-dark md:text-2xl">
         Запишитесь на урок прямо сейчас
       </h2>
@@ -48,7 +48,7 @@ export function BookingForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Как к вам обращаться?"
-            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15"
+            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-base outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15 sm:text-sm"
           />
         </div>
 
@@ -63,7 +63,7 @@ export function BookingForm() {
             value={phone}
             onChange={(e) => setPhone(formatPhone(e.target.value))}
             placeholder="+7 (___) ___-__-__"
-            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15"
+            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-base outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15 sm:text-sm"
           />
         </div>
 
@@ -76,7 +76,7 @@ export function BookingForm() {
             required
             value={instrument}
             onChange={(e) => setInstrument(e.target.value)}
-            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15"
+            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-base outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15 sm:text-sm"
           >
             <option value="">Выберите инструмент</option>
             {INSTRUMENTS.map(({ value, label }) => (
@@ -97,7 +97,7 @@ export function BookingForm() {
             value={time}
             onChange={(e) => setTime(e.target.value)}
             placeholder="Например: будни после 17:00"
-            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15"
+            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-base outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15 sm:text-sm"
           />
         </div>
 

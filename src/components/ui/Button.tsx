@@ -25,9 +25,9 @@ const variants: Record<ButtonVariant, string> = {
 };
 
 const sizes: Record<ButtonSize, string> = {
-  sm: 'px-4 py-2 text-sm',
-  md: 'px-5 py-2.5 text-sm',
-  lg: 'px-7 py-3.5 text-base',
+  sm: 'min-h-11 px-4 py-2 text-sm',
+  md: 'min-h-11 px-5 py-2.5 text-sm',
+  lg: 'min-h-12 px-7 py-3.5 text-base',
 };
 
 export function Button({
@@ -40,7 +40,7 @@ export function Button({
   className = '',
   onClick,
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center gap-2 rounded-[10px] border-2 font-semibold transition-all duration-250 whitespace-nowrap ${variants[variant]} ${sizes[size]} ${className}`;
+  const classes = `inline-flex touch-manipulation items-center justify-center gap-2 rounded-[10px] border-2 font-semibold transition-all duration-250 whitespace-nowrap active:scale-[0.98] ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (to) {
     return (

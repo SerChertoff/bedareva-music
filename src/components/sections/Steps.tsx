@@ -5,9 +5,9 @@ import { SectionHeader } from '../ui/SectionHeader';
 
 export function Steps() {
   return (
-    <section className="bg-surface-muted py-20">
+    <section className="bg-surface-muted py-12 sm:py-16 md:py-20" aria-label="Как начать заниматься">
       <Container>
-        <SectionHeader title="Как начать заниматься" />
+        <SectionHeader as="h2" title="Как начать заниматься" />
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 md:flex-row md:items-stretch">
           {STEPS.map((step, index) => (
             <div key={step.title} className="contents">

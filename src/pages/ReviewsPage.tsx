@@ -4,9 +4,9 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 
 export function ReviewsPage() {
   return (
-    <section className="bg-surface py-20">
+    <section className="bg-surface py-12 sm:py-16 md:py-20">
       <Container>
-        <SectionHeader title="Отзывы учеников" subtitle="Что говорят о занятиях" />
+        <SectionHeader as="h1" title="Отзывы учеников" subtitle="Что говорят о занятиях" />
         <ReviewsGrid />
       </Container>
     </section>

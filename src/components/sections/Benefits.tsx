@@ -3,7 +3,7 @@ import { Container } from '../ui/Container';
 
 export function Benefits() {
   return (
-    <section className="bg-surface py-16">
+    <section className="bg-surface py-12 sm:py-16" aria-label="Преимущества студии">
       <Container>
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {BENEFITS.map(({ icon, title, text }) => (

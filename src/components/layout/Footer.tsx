@@ -11,7 +11,7 @@ export function Footer() {
             <span className="block font-display text-base font-bold text-white">{SITE.name}</span>
             <span className="text-sm">{SITE.subtitle}</span>
           </div>
-          <nav className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+          <nav aria-label="Навигация в подвале" className="flex flex-wrap justify-center gap-x-4 gap-y-3 sm:gap-x-5">
             {NAV_LINKS.map(({ to, label }) => (
               <Link key={to} to={to} className="text-sm transition hover:text-white">
                 {label}

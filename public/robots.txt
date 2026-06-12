@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serchertoff.github.io/bedareva-music/sitemap.xml
