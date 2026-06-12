@@ -1,5 +1,6 @@
 import { SITE_URL } from '../../data/seo';
 import { SITE } from '../../data/content';
+import { absoluteAssetUrl } from '../../utils/assets';
 
 export function JsonLd() {
   const schema = {
@@ -9,7 +10,7 @@ export function JsonLd() {
     description:
       'Индивидуальные уроки музыки в Бийске: вокал, фортепиано, гитара, баян, гусли. Преподаватель — Бедарёва Надежда Анатольевна.',
     url: SITE_URL,
-    image: `${SITE_URL}${SITE.photo}`,
+    image: absoluteAssetUrl(SITE.photo),
     telephone: `+${SITE.phoneRaw}`,
     address: {
       '@type': 'PostalAddress',

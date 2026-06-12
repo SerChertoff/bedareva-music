@@ -1,4 +1,5 @@
 import { SITE } from '../../data/content';
+import { assetUrl } from '../../utils/assets';
 import { Button } from '../ui/Button';
 import { Container } from '../ui/Container';
 import { StudioBadge } from '../ui/StudioBadge';
@@ -41,7 +42,7 @@ export function Hero() {
           <figure className="m-0 flex items-center justify-center lg:justify-end">
             <div className="overflow-hidden rounded-[20px] border-4 border-white/20 bg-white/5 p-1 shadow-2xl shadow-black/30 ring-1 ring-white/10">
               <img
-                src={SITE.photo}
+                src={assetUrl(SITE.photo)}
                 alt="Бедарёва Надежда Анатольевна — преподаватель музыки в студии Алые паруса, Бийск"
                 width={824}
                 height={1024}

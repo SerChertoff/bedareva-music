@@ -10,7 +10,7 @@ import { ServicesPage } from './pages/ServicesPage';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <JsonLd />
       <Routes>
         <Route element={<Layout />}>

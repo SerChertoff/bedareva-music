@@ -1,4 +1,5 @@
 import { ABOUT_POINTS, SITE } from '../data/content';
+import { assetUrl } from '../utils/assets';
 import { Button } from '../components/ui/Button';
 import { Container } from '../components/ui/Container';
 
@@ -9,7 +10,7 @@ export function AboutPage() {
         <div className="grid items-center gap-14 lg:grid-cols-[360px_1fr]">
           <div className="mx-auto w-full max-w-[360px] overflow-hidden rounded-[20px] shadow-2xl shadow-brand-blue-dark/15">
             <img
-              src={SITE.photoPortrait}
+              src={assetUrl(SITE.photoPortrait)}
               alt="Надежда Анатольевна Бедарёва — преподаватель музыки, студия Алые паруса"
               width={360}
               height={450}

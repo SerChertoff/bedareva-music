@@ -5,8 +5,8 @@ export const SITE = {
   address: 'г. Бийск, ул. Мерлина, 44/2',
   phone: '+7 (923) 168-03-98',
   phoneRaw: '79231680398',
-  photo: '/images/photo.png',
-  photoPortrait: '/images/photo-portrait.png',
+  photo: 'images/photo.png',
+  photoPortrait: 'images/photo-portrait.png',
   year: 2025,
 } as const;
 

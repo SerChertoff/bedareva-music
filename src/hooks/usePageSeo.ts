@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import { getCanonicalUrl, getPageSeo, SITE_URL } from '../data/seo';
+import { getCanonicalUrl, getPageSeo } from '../data/seo';
 import { SITE } from '../data/content';
+import { absoluteAssetUrl } from '../utils/assets';
 
 function setMeta(name: string, content: string, property = false) {
   const attr = property ? 'property' : 'name';
@@ -27,7 +28,7 @@ export function usePageSeo(pathname: string) {
   useEffect(() => {
     const seo = getPageSeo(pathname);
     const canonical = getCanonicalUrl(pathname);
-    const image = `${SITE_URL}${SITE.photo}`;
+    const image = absoluteAssetUrl(SITE.photo);
 
     document.title = seo.title;
 
