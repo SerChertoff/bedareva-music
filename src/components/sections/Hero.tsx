@@ -48,7 +48,7 @@ export function Hero() {
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                className="block h-auto w-auto max-h-[min(360px,50vh)] max-w-[min(100%,240px)] rounded-[14px] sm:max-h-[min(400px,54vh)] sm:max-w-[270px] lg:max-h-[min(460px,62vh)] lg:max-w-[300px] xl:max-w-[320px]"
+                className="block h-auto w-auto max-h-[min(440px,54vh)] max-w-[min(100%,300px)] rounded-[14px] sm:max-h-[min(480px,58vh)] sm:max-w-[330px] lg:max-h-[min(540px,70vh)] lg:max-w-[380px] xl:max-w-[400px]"
               />
             </div>
           </figure>
