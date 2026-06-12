@@ -49,7 +49,7 @@ export function Hero() {
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                className="block h-auto w-auto max-h-[min(440px,54vh)] max-w-[min(100%,300px)] rounded-[14px] sm:max-h-[min(480px,58vh)] sm:max-w-[330px] lg:max-h-[min(540px,70vh)] lg:max-w-[380px] xl:max-w-[400px]"
+                className="block h-auto w-auto max-h-[min(480px,56vh)] max-w-[min(100%,330px)] rounded-[14px] sm:max-h-[min(520px,60vh)] sm:max-w-[360px] lg:max-h-[min(580px,72vh)] lg:max-w-[420px] xl:max-w-[440px]"
               />
             </div>
           </figure>
