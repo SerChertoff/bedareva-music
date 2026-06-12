@@ -4,7 +4,7 @@ import { Container } from '../ui/Container';
 
 export function Footer() {
   return (
-    <footer className="bg-brand-blue-dark py-10 text-slate-300">
+    <footer className="bg-gradient-to-r from-brand-blue-dark to-[#3d2830] py-10 text-stone-300">
       <Container>
         <div className="flex flex-col items-center gap-5 text-center">
           <div>

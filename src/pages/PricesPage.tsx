@@ -4,12 +4,12 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 
 export function PricesPage() {
   return (
-    <section className="bg-slate-50 py-20">
+    <section className="bg-surface-muted py-20">
       <Container>
         <SectionHeader title="Стоимость занятий" subtitle="Прозрачные цены без скрытых платежей" />
 
         <div className="mx-auto grid max-w-2xl gap-8 md:grid-cols-2">
-          <article className="rounded-[20px] border-2 border-slate-200 bg-white p-8 text-center transition hover:shadow-lg">
+          <article className="rounded-[20px] border-2 border-stone-200/80 bg-surface-card p-8 text-center transition hover:shadow-lg">
             <h3 className="font-display text-xl font-bold text-brand-blue-dark">Разовое занятие</h3>
             <p className="mt-1 text-sm text-slate-500">60 минут</p>
             <div className="mt-5 font-display text-5xl font-extrabold text-brand-blue">
@@ -21,7 +21,7 @@ export function PricesPage() {
             </Button>
           </article>
 
-          <article className="relative rounded-[20px] border-2 border-brand-blue bg-white p-8 text-center shadow-lg shadow-brand-blue/10">
+          <article className="relative rounded-[20px] border-2 border-brand-blue/50 bg-surface-card p-8 text-center shadow-lg shadow-brand-blue/10">
             <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-brand-purple px-4 py-1.5 text-xs font-bold tracking-wider text-white">
               ВЫГОДНО
             </span>

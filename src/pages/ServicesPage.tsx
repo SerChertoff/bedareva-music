@@ -4,7 +4,7 @@ import { SectionHeader } from '../components/ui/SectionHeader';
 
 export function ServicesPage() {
   return (
-    <section className="py-20">
+    <section className="bg-surface py-20">
       <Container>
         <SectionHeader
           title="Что я преподаю"

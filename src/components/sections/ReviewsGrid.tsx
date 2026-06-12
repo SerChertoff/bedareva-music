@@ -6,7 +6,7 @@ export function ReviewsGrid() {
       {REVIEWS.map(({ text, author }) => (
         <article
           key={author}
-          className="rounded-xl border border-slate-200 bg-slate-50 p-7 transition hover:shadow-lg hover:shadow-brand-blue/10"
+          className="rounded-xl border border-stone-200/80 bg-surface-card p-7 transition hover:shadow-lg hover:shadow-brand-blue/10"
         >
           <div className="mb-4 tracking-wider">⭐⭐⭐⭐⭐</div>
           <p className="text-sm italic leading-relaxed text-slate-600">{text}</p>

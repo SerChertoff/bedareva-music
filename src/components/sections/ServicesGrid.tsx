@@ -9,8 +9,8 @@ export function ServicesGrid() {
           key={title}
           className={`rounded-xl border p-8 transition hover:-translate-y-1 hover:shadow-lg ${
             accent
-              ? 'border-transparent bg-gradient-to-br from-brand-blue-dark to-brand-purple text-white hover:shadow-brand-blue/20'
-              : 'border-slate-200 bg-slate-50 hover:border-brand-blue hover:shadow-brand-blue/10'
+              ? 'border-transparent bg-gradient-to-br from-brand-blue-dark to-[#8b3d4f] text-white hover:shadow-brand-blue/20'
+              : 'border-stone-200/80 bg-surface-card hover:border-brand-blue/40 hover:shadow-brand-blue/10'
           }`}
         >
           <div className="mb-4 text-4xl">{icon}</div>

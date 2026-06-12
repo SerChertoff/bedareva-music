@@ -4,7 +4,7 @@ import { Container } from '../components/ui/Container';
 
 export function AboutPage() {
   return (
-    <section className="py-20">
+    <section className="bg-surface py-20">
       <Container>
         <div className="grid items-center gap-14 lg:grid-cols-[360px_1fr]">
           <div className="mx-auto w-full max-w-[360px] overflow-hidden rounded-[20px] shadow-2xl shadow-brand-blue-dark/15">

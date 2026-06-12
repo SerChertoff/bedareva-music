@@ -31,7 +31,7 @@ export function BookingForm() {
   };
 
   return (
-    <div className="mx-auto max-w-lg rounded-[20px] bg-white p-8 shadow-2xl md:p-10">
+    <div className="mx-auto max-w-lg rounded-[20px] bg-surface-card p-8 shadow-2xl md:p-10">
       <h2 className="mb-8 text-center font-display text-xl font-bold uppercase tracking-wide text-brand-blue-dark md:text-2xl">
         Запишитесь на урок прямо сейчас
       </h2>

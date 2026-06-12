@@ -1,9 +1,13 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-brand-blue: #2563eb;
-  --color-brand-blue-dark: #1e3a8a;
-  --color-brand-purple: #7c3aed;
+  /* Основная палитра — тёплый стиль студии «Алые паруса» */
+  --color-brand-blue: #b5495e;
+  --color-brand-blue-dark: #2a1f23;
+  --color-brand-purple: #c9a86c;
+  --color-surface: #faf7f4;
+  --color-surface-muted: #f3ede6;
+  --color-surface-card: #fffdf9;
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-display: 'Montserrat', 'Inter', sans-serif;
 }
@@ -14,5 +18,7 @@ html {
 
 body {
   font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: #292524;
   -webkit-font-smoothing: antialiased;
 }
